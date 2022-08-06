@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 1</title>
+</head>
+<body>
+    <script>
+    document.write("Task 9 > Запросите у пользователя трехзначное число и выведите его задом наперед. Для решения задачи вам понадобится оператор % (остаток от деления).")
+    user_data=prompt("Введите любое трёхзначное число");
+    last=user_data%10;                                       //получаем единицы
+    midl=user_data%100-last;                                 //получаем десятки
+    first=(user_data-midl-last)/100;                         //получаем сотни и превращаем их в единицы
+    last=last*100;                                           //превращаем единицы в сотни
+    alert(first+midl+last);                                  //складываем сотни+десятки+единицы
+    </script>
+</body>
+</html>

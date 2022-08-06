@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 1</title>
+</head>
+<body>
+    <script>
+    document.write("Task 8 > Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит сколько шоколадок может купить пользователь и сколько сдачи у него останется.")
+    user_cash=prompt("Введите сумму которую вы хотите потратить");
+    cost_of_chocolate=prompt("Введите цену шоколадки");
+    modul=user_cash%cost_of_chocolate;                                              //Вычисляем остаток\ modul = сдача
+    chocolate=(user_cash-modul)/cost_of_chocolate;                                  //В скобочках вычитаем остаток из всех денег иделим оставшуюся сумму на цену шоколадки 
+    alert("Вы можете купить "+chocolate+" шоколадок, ваша сдача "+modul+"руб.");    //chocolate = количество шоколадок которое можно купить на данную сумму           
+    </script>
+</body>
+</html>

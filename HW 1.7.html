@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 1</title>
+</head>
+<body>
+    <script>
+    document.write("Task 7 > Пользователь указывает объем флешки в Гб. Программа должна посчитать сколько файлов размером в 820 Мб помещается на флешку.")
+    volume=prompt("Укажите обьём памяти устройства в гигабайтах");
+    gb=1.024;
+    file_size=0.820;
+    files=Math.floor((volume*gb)/file_size); //округляем что бы знать минимальное число а не дробь
+    alert(files+" файлов поместится на устройстве");
+    </script>
+</body>
+</html>
